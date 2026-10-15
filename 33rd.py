@@ -17,12 +17,12 @@ from datetime import datetime, timedelta
 from telebot import TeleBot, types
 
 # ==================== RAILWAY / ENV CONFIG ====================
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "").strip()
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8834631762:AAGf-MyH2AAGEn7RIF-I8BA866_wpbeCYt0").strip()
 if not BOT_TOKEN:
     raise RuntimeError(
         "BOT_TOKEN is required. Set it in your hosting provider's environment secrets."
     )
-ADMIN_ID_VALUE = os.environ.get("ADMIN_ID", "").strip()
+ADMIN_ID_VALUE = os.environ.get("ADMIN_ID", "5427735251").strip()
 if not ADMIN_ID_VALUE.isdigit():
     raise RuntimeError(
         "ADMIN_ID is required. Set your numeric Telegram user ID in the hosting environment."
